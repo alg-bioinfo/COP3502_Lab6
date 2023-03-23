@@ -7,6 +7,14 @@ def encode():
         encod_password += str(number)
     return orig_password, encod_password
 
+def decode():
+    orig_password = input("Please enter your password to encode: ")
+    encod_password = ''
+    for number in orig_password:
+        number = int(number) - 3
+        encod_password += str(number)
+    return orig_password
+
 # Create main function
 def main():
     # Open menu while loop
